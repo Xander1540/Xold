@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "748354606397",
+    "firebase_url": "https://xold-723b3-default-rtdb.firebaseio.com",
+    "project_id": "xold-723b3",
+    "storage_bucket": "xold-723b3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:748354606397:android:9a13889fb2370de67f6154",
+        "android_client_info": {
+          "package_name": "com.example.xold"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "748354606397-r85kf0qdducns2l8g7jirdv0rokle0t2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.xold",
+            "certificate_hash": "85cabaed0aa6f1ed3aefced1e677cd1003ad533f"
+          }
+        },
+        {
+          "client_id": "748354606397-sjnm0bjcdsv876qm5bfpr8jo75mqcuch.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCV_vB5fLF1pp2LOwrYeDx7cBKeYUXOCU4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "748354606397-sjnm0bjcdsv876qm5bfpr8jo75mqcuch.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Xold</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="not_have_account_register">Not have Account? <b>Register</b></string>
+    <string name="already_have_account_login">Already have account? <b>Login</b></string>
+    <string name="google_web_client_id">748354606397-sjnm0bjcdsv876qm5bfpr8jo75mqcuch.apps.googleusercontent.com</string>
+    <string name="didn_t_recieve_otp_resend">Didn\'t Recieve OTP? <b>Resend</b></string>
+    <string name="forgot_password_recover">Forgot Password? <b>Recover</b></string>
+</resources>
