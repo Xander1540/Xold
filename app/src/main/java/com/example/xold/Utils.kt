@@ -9,6 +9,28 @@ import java.util.Locale
 
 object Utils {
 
+    const val AD_STATUS_AVAILABLE = "AVAILABLE"
+    const val AD_STATUS_SOLD = "SOLD"
+
+    val categories = arrayOf(
+        "Mobiles",
+        "Computer/Laptop",
+        "Electronics & Home Appliances",
+        "Vehicles",
+        "Furniture & Home Decor",
+        "Fashion & Beauty",
+        "Books",
+        "Sports",
+        "Animals",
+        "Businessman",
+        "Agriculture"
+    )
+
+    val condition = arrayOf(
+        "New",
+        "Used",
+        "Refurbished"
+    )
 
 
     fun toast(context: Context, message: String){

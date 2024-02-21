@@ -221,6 +221,7 @@
                 android:layout_below="@id/titleTil"
                 app:startIconDrawable="@drawable/ic_description_white"
                 app:boxCornerRadiusBottomEnd="8dp"
+                android:gravity="top|start"
                 app:boxCornerRadiusTopEnd="8dp"
                 app:boxCornerRadiusBottomStart="8dp"
                 app:boxCornerRadiusTopStart="8dp">
@@ -230,6 +231,7 @@
                     android:id="@+id/descriptionEt"
                     android:inputType="textMultiLine|textCapSentences"
                     android:minHeight="100dp"
+                    android:gravity="top|start"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 

@@ -188,6 +188,10 @@ class MainActivity : AppCompatActivity() {
 39. Delete Account UI
 40. Delete Account Coding
 41. Test Delete Account
-
+42. Setup MAP SDK
+43. Create LocationPickerActivity
+44. Location Picker UI
+45. Location Picker Coding
+46. Pick Location for Ad
 
  */
