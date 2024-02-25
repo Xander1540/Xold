@@ -55,6 +55,9 @@ dependencies {
 
     implementation("com.github.bumptech.glide:glide:4.16.0")
 
+    implementation("com.google.android.gms:play-services-maps:18.2.0")
+    implementation("com.google.android.libraries.places:places:3.3.0")
+
     implementation("com.google.android.gms:play-services-auth:21.0.0")
     implementation("com.hbb20:ccp:2.7.3")
     testImplementation("junit:junit:4.13.2")

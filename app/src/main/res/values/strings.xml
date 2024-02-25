@@ -7,4 +7,7 @@
     <string name="google_web_client_id">748354606397-sjnm0bjcdsv876qm5bfpr8jo75mqcuch.apps.googleusercontent.com</string>
     <string name="didn_t_recieve_otp_resend">Didn\'t Recieve OTP? <b>Resend</b></string>
     <string name="forgot_password_recover">Forgot Password? <b>Recover</b></string>
+
+    <string name="my_google_maps_api_key">AIzaSyAVOdaFc53DAl8i_1jcga2d3D8N70xvmo4"</string>
+
 </resources>

@@ -71,12 +71,43 @@ class AdCreateActivity : AppCompatActivity() {
             showImagePickOptions()
         }
 
+        binding.locationAct.setOnClickListener {
+
+            val intent = Intent(this, LocationPickerActivity::class.java)
+            locationPickerActivityResultLauncher.launch(intent)
+        }
+
         binding.postAdBtn.setOnClickListener {
 
             validateData()
         }
 
     }
+
+    private val locationPickerActivityResultLauncher =
+        registerForActivityResult(ActivityResultContracts.StartActivityForResult()){result->
+            Log.d(TAG, "locationPickerActivityResultLauncher: ")
+
+            if (result.resultCode == Activity.RESULT_OK){
+
+                val data = result.data
+
+                if (data!=null) {
+                    latitude = data.getDoubleExtra("latitude", 0.0)
+                    longitude = data.getDoubleExtra("longitude", 0.0)
+                    address = data.getStringExtra("address") ?: ""
+
+                    Log.d(TAG, "c: latitude: $latitude")
+                    Log.d(TAG, "locationPickerActivityResultLauncher: longitude: $longitude")
+                    Log.d(TAG, "locationPickerActivityResultLauncher: address: $address")
+
+                    binding.locationAct.setText(address)
+                }
+            }else{
+                Log.d(TAG, "locationPickerActivityResultLauncher: cancelled")
+                Utils.toast(this, "Cancelled")
+            }
+        }
 
     private fun loadImages() {
 

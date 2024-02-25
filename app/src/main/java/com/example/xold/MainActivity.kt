@@ -193,5 +193,16 @@ class MainActivity : AppCompatActivity() {
 44. Location Picker UI
 45. Location Picker Coding
 46. Pick Location for Ad
-
+47. Ads UI - fragment_home.xml
+48. Ad category UI - row_category.xml
+49. Create Model (ModelCategory) Class for Ad Categories List to show in RecyclerView (Horizontal)
+50. Create Custom Adapter (AdapterCategory) Class for Ad Categories List to show in RecyclerView (Horizontal)
+51. Create interface (RvListenerCategory) to handle Ad Category click event in Fragment (HomeFragment)
+52. Show Categories - Coding
+53. Show Ads UI - row_ad.xml
+54. Create Model (ModelAd) Class for Ads List to show in RecyclerView
+55. Create Custom Adapter (AdapterAd) Class for Ads List to show in RecyclerView
+56. Create Filter (FilterAd) Class to search Ads
+57. Show Ads Coding - HomeFragment.java
+58. Testing
  */
