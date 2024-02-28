@@ -6,12 +6,13 @@
         android:name="android.hardware.camera"
         android:required="false" />
 
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
-    
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -25,34 +26,43 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".LocationPickerActivity"
+            android:name=".activities.ChatActivity"
             android:exported="false" />
         <activity
-            android:name=".AdCreateActivity"
+            android:name=".activities.AdSellerProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".ChangePasswordActivity"
+            android:name=".activities.AdDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".ForgotPasswordActivity"
+            android:name=".activities.LocationPickerActivity"
             android:exported="false" />
         <activity
-            android:name=".ProfileEditActivity"
+            android:name=".activities.AdCreateActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginPhoneActivity"
+            android:name=".activities.ChangePasswordActivity"
             android:exported="false" />
         <activity
-            android:name=".RegisterEmailActivity"
+            android:name=".activities.ForgotPasswordActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginEmailActivity"
+            android:name=".activities.ProfileEditActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginOptionsActivity"
+            android:name=".activities.LoginPhoneActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.RegisterEmailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.LoginEmailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.LoginOptionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -64,6 +74,14 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/my_google_maps_api_key" />
+
+        <service android:name=".MyFcmService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+>
     </application>
 
 </manifest>

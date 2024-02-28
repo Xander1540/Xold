@@ -9,5 +9,5 @@
     <string name="forgot_password_recover">Forgot Password? <b>Recover</b></string>
 
     <string name="my_google_maps_api_key">AIzaSyAVOdaFc53DAl8i_1jcga2d3D8N70xvmo4"</string>
-
+    <string name="price">₹</string>
 </resources>
