@@ -13,6 +13,7 @@ object Utils {
     const val AD_STATUS_SOLD = "SOLD"
 
     val categories = arrayOf(
+        "All",
         "Mobiles",
         "Computer/Laptop",
         "Electronics & Home Appliances",
@@ -24,6 +25,25 @@ object Utils {
         "Animals",
         "Businessman",
         "Agriculture"
+    )
+
+
+    val categoryIcon = arrayOf(
+        R.drawable.ic_category_all,
+        R.drawable.ic_category_mobiles,
+        R.drawable.ic_category_computer,
+        R.drawable.ic_electronics,
+        R.drawable.ic_category_white,
+        R.drawable.ic_category_furniture,
+        R.drawable.ic_category_fashion,
+        R.drawable.ic_category_books,
+        R.drawable.ic_category_sports,
+        R.drawable.ic_category_animal,
+        R.drawable.ic_category_bussiness,
+        R.drawable.ic_categoty_agriculture
+
+
+
     )
 
     val condition = arrayOf(
