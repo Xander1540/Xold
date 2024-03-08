@@ -233,8 +233,7 @@ class HomeFragment : Fragment() {
             categoryArrayList.add(modelCategory)
         }
 
-        val adapterCategory = AdapterCategory(mContext, categoryArrayList, object:
-            RvListenerCategory {
+        val adapterCategory = AdapterCategory(mContext, categoryArrayList, object: RvListenerCategory {
             override fun onCategoryClick(modelCategory: ModelCategory) {
 
                 val selectedCategory = modelCategory.category

@@ -58,6 +58,7 @@ class AdapterImagePicked(
         }else{
 
             try{
+
                 val imageUri = model.imageUri
                 Log.d(TAG, "onBindViewHolder: imageUri: $imageUri")
 

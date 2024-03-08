@@ -100,7 +100,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.sellFab.setOnClickListener {
             val intent = Intent(this, AdCreateActivity::class.java)
-            intent.putExtra("isEditMode", true)
+            intent.putExtra("isEditMode", false)
             startActivity(intent)
 
         }

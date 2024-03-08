@@ -105,6 +105,7 @@ class LocationPickerActivity() : AppCompatActivity(), OnMapReadyCallback {
             }
         })
 
+
         binding.toolbarBackBtn.setOnClickListener {
             onBackPressed()
         }
@@ -148,6 +149,7 @@ class LocationPickerActivity() : AppCompatActivity(), OnMapReadyCallback {
             addressFromLatLng(latLng)
         }
     }
+
 
     @SuppressLint("MissingPermission")
     private val requestLocationPermission: ActivityResultLauncher<String> =

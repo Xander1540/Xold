@@ -279,6 +279,7 @@ class AdCreateActivity : AppCompatActivity() {
     ){ result->
 
         Log.d(TAG, "cameraActivityResultLauncher: ")
+
         if (result.resultCode == Activity.RESULT_OK){
 
             Log.d(TAG, "cameraActivityResultLauncher: imageUri: $imageUri")
@@ -347,8 +348,10 @@ class AdCreateActivity : AppCompatActivity() {
         }else{
 
             if (isEditMode){
+
                 updateAd()
             }else{
+
                 postAd()
             }
             postAd()
@@ -393,7 +396,7 @@ class AdCreateActivity : AppCompatActivity() {
 
             }
             .addOnFailureListener { e->
-                Log.e(TAG, "postAd: ", )
+                Log.e(TAG, "postAd: ", e)
                 progressDialog.dismiss()
                 Utils.toast(this, "Failed due to ${e.message}")
 
@@ -441,6 +444,7 @@ class AdCreateActivity : AppCompatActivity() {
             val modelImagePicked = imagePickedArrayList[i]
 
             if(!modelImagePicked.fromInternet){
+
                 val imageName = modelImagePicked.id
 
                 val filePathAndName = "Ads/$imageName"
@@ -451,7 +455,6 @@ class AdCreateActivity : AppCompatActivity() {
                     .addOnProgressListener { snapshot->
 
                         val progress= 100* snapshot.bytesTransferred / snapshot.totalByteCount
-
                         Log.d(TAG, "uploadImagesStorage: progress: $progress")
                         val message = "uploading $imageIndexForProgress of ${imagePickedArrayList.size} images...Progress ${progress.toInt()}"
                         Log.d(TAG, "uploadImagesStorage: message: $message")
